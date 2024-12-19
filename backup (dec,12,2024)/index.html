@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA - Final Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Time Management System with <br>Smart Task Scheduling & Local Storage</h1>
+    </header>
+    <div class="scrollable">
+      <section id="add-task">
+        <h2>Add Task</h2>
+        <form id="task-form">
+          <input type="text" id="task-title" placeholder="Title" required>
+          <textarea id="task-desc" placeholder="Description"></textarea>
+          <select id="task-priority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+          <input type="time" id="task-start-time" required>
+          <input type="number" id="task-duration" placeholder="Duration (minutes)" required>
+          <input type="date" id="task-day" required>
+          <button type="submit" style="width: 102.5%;">Add Task</button>
+        </form>
+      </section>
+
+      <section id="task-list-section">
+        <h2>Task List</h2>
+        <input type="text" id="task-search" placeholder="Search for a task" />
+        <div id="task-list"></div>
+      </section>
+
+      <div id="edit-task-modal" class="modal hidden">
+        <div class="modal-content">
+          <h2>Edit Task</h2>
+          <form id="edit-task-form">
+            <input type="text" id="edit-task-title" placeholder="Title" required>
+            <textarea id="edit-task-desc" placeholder="Description"></textarea>
+            <select id="edit-task-priority">
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
+            </select>
+            <input type="time" id="edit-task-start-time" required>
+            <input type="number" id="edit-task-duration" placeholder="Duration (minutes)" required>
+            <input type="date" id="edit-task-day" required>
+            <button type="submit">Save Changes</button>
+            <button type="button" id="cancel-edit">Cancel</button>
+          </form>
+        </div>
+      </div>
+
+      <section id="daily-summary">
+        <hr style="border: 2px solid rgb(78, 78, 78);"><h2>Daily Summary</h2>
+        <div id="summary-content"></div>
+      </section>
+
+      <section id="weekly-overview">
+        <hr style="border: 2px solid rgb(78, 78, 78);"><h2>Weekly Overview</h2>
+        <div id="overview-content">
+            <h3>Weekly Overview</h3>
+            <p>Total Estimated Time: <span id="total-estimated-time">0</span> minutes</p>
+            <p>Total Actual Time: <span id="total-actual-time">0</span> seconds</p>
+          </div>          
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

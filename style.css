@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 900px;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .scrollable {
+    overflow-y: auto;
+    padding: 2rem;
+  }
+  
+  header {
+    background: #633a29de;
+    color: rgb(195, 253, 255);
+    text-align: center;
+    padding: 5px 0;
+    padding-bottom: 10px;
+    height: 120px;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  form input, form select, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+
+  form input{
+    width: 100.3%
+  }
+  form select{
+    width: 102.5%
+  }
+
+  form textarea{
+    width: 100.5%
+  }
+  
+  
+  button {
+    background-color: #633a29bf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.7rem;
+  }
+  
+  button:hover {
+    background-color: #3c1504;
+  }
+  
+  #task-list .task {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal.hidden {
+    display: none;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .delete-task:hover{
+    background-color: rgba(255, 0, 0, 0.768);
+  }
+
+  .start-task:hover{
+    background-color: rgba(46, 155, 119, 0.918);
+  }
+
+  .pause-task:hover{
+    background-color: rgb(1, 1, 1);
+  }
+  .stop-task:hover{
+    background-color: rgba(255, 0, 0, 0.548);
+  }
+
+  #task-list-section input{
+    width: 101%;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  #task-list-section input:hover{
+    background-color: rgb(233, 233, 233);
+  }
