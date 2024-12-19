@@ -29,7 +29,7 @@ taskForm.addEventListener('submit', (e) => {
   };
 
   if (isConflict(newTask)) {
-    alert("Task conflicts with another! Rescheduling...");
+    alert("You already have a schedule within this time! Now Rescheduling.");
     rescheduleTask(newTask);
   }
 
